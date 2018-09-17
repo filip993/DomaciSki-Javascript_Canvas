@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--Zileeeee :)-->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>CRTANJE</title>
+</head>
+
+<body>
+
+<canvas id="mojkanvas" width="400" height="400"> </canvas>
+<script>
+    var canvas = document.getElementById("mojkanvas");
+    var ctx = canvas.getContext("2d");
+    <!--ctx.clearRect(0,0,100,100);-->
+    <!--ctx.clearRect(100,0,100,100);-->
+    <!--ctx.clearRect(200,0,100,100);-->
+    <!--ctx.clearRect(300,0,100,100);-->
+    <!--ctx.clearRect(200,100,100,100);-->
+    <!--ctx.clearRect(300,100,100,100);-->
+    <!--ctx.clearRect(300,200,100,100);-->
+    ctx.fillStyle = "black";
+    ctx.beginPath();
+    ctx.rect(0,0,100,100);
+    ctx.fill();
+    ctx.fillRect(0,100,100,100);
+    ctx.fillRect(100,100,100,100);
+    ctx.fillRect(0,200,100,100);
+    ctx.fillRect(100,200,100,100);
+    ctx.fillRect(200,200,100,100);
+    ctx.fillRect(0,300,100,100);
+    ctx.fillRect(100,300,100,100);
+    ctx.fillRect(200,300,100,100);
+    ctx.fillRect(300,300,100,100);
+    ctx.beginPath();
+    ctx.strokeStyle ='#FF0001';
+    ctx.arc(255,85,50,0,2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(255,85,25,0,2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(205, 80);
+    ctx.lineTo(305, 80);
+    ctx.lineTo(255, 135);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+</script>
+
+</body>
+</html>
